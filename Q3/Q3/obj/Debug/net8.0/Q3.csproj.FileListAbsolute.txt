@@ -1,0 +1,15 @@
+E:\Shopitify\Developer_Test\Q3\Q3\bin\Debug\net8.0\Q3.exe
+E:\Shopitify\Developer_Test\Q3\Q3\bin\Debug\net8.0\Q3.deps.json
+E:\Shopitify\Developer_Test\Q3\Q3\bin\Debug\net8.0\Q3.runtimeconfig.json
+E:\Shopitify\Developer_Test\Q3\Q3\bin\Debug\net8.0\Q3.dll
+E:\Shopitify\Developer_Test\Q3\Q3\bin\Debug\net8.0\Q3.pdb
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\Q3.GeneratedMSBuildEditorConfig.editorconfig
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\Q3.AssemblyInfoInputs.cache
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\Q3.AssemblyInfo.cs
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\Q3.csproj.CoreCompileInputs.cache
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\Q3.sourcelink.json
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\Q3.dll
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\refint\Q3.dll
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\Q3.pdb
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\Q3.genruntimeconfig.cache
+E:\Shopitify\Developer_Test\Q3\Q3\obj\Debug\net8.0\ref\Q3.dll

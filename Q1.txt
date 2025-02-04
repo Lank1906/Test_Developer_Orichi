@@ -1,0 +1,66 @@
+Dependency Injection (DI) là một mẫu thiết kế phần mềm giúp giảm sự phụ thuộc giữa các thành phần trong ứng dụng bằng cách cung cấp (inject) các phụ thuộc (dependencies) từ bên ngoài thay vì tạo chúng bên trong.
+
+-- .NET Core có DI tích hợp sẵn, giúp quản lý các dependencies một cách dễ dàng thông qua Service Container.
+B1: Định nghĩa Interface và Implementation
+public interface IMyService
+{
+    string GetMessage();
+}
+
+public class MyService : IMyService
+{
+    public string GetMessage() => "Hello from MyService!";
+}
+B2: Đăng ký Service trong Program.cs
+builder.Services.AddScoped<IMyService, MyService>();
+B3: Inject Service vào Controller
+[ApiController]
+[Route("[controller]")]
+public class MyController : ControllerBase
+{
+    private readonly IMyService _myService;
+
+    public MyController(IMyService myService)
+    {
+        _myService = myService;
+    }
+
+    [HttpGet]
+    public string Get() => _myService.GetMessage();
+}
+
+-- .NET Framework không hỗ trợ DI trực tiếp như .NET Core, nhưng có thể sử dụng các thư viện DI bên ngoài như: Microsoft.Extensions.DependencyInjection, Unity, Ninject
+Với DependencyInjection
+B1: Cài đặt Package => Install-Package Microsoft.Extensions.DependencyInjection
+B2: Cấu hình DI
+using Microsoft.Extensions.DependencyInjection;
+using System;
+
+public interface IMyService
+{
+    void DoWork();
+}
+
+public class MyService : IMyService
+{
+    public void DoWork() => Console.WriteLine("Hello World!");
+}
+
+class Program
+{
+    static void Main()
+    {
+        // 1. Tạo Service Collection
+        var serviceCollection = new ServiceCollection();
+
+        // 2. Đăng ký service
+        serviceCollection.AddTransient<IMyService, MyService>();
+
+        // 3. Xây dựng ServiceProvider
+        var serviceProvider = serviceCollection.BuildServiceProvider();
+
+        // 4. Resolve và sử dụng Service
+        var service = serviceProvider.GetRequiredService<IMyService>();
+        service.DoWork();
+    }
+}

@@ -1,0 +1,5 @@
+Dể tối ưu tốc độ truy vấn khi lưu trữ dữ liệu sự kiện hàng ngày trong SQL với 10 triệu bản ghi mỗi ngày
+C1: Tạo Partition Table => Chia bảng theo ngày.
+C2: Sử dụng chỉ mục.
+C3: Tối ưu truy vấn => không dùng *, dùng lọc khi truy vấn
+C4: Achive dữ liệu cũ => giảm tải cho bảng chính.
