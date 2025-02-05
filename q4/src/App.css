@@ -1,0 +1,12 @@
+.Polaris-ShadowBevel::before{
+  box-shadow: none;
+}
+.options{
+  background: red;
+    color: white;
+    width: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
