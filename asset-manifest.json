@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Test_Developer_Orichi/static/css/main.0212fd7d.css",
+    "main.js": "/Test_Developer_Orichi/static/js/main.1bce6623.js",
+    "static/js/488.6d85803d.chunk.js": "/Test_Developer_Orichi/static/js/488.6d85803d.chunk.js",
+    "index.html": "/Test_Developer_Orichi/index.html",
+    "main.0212fd7d.css.map": "/Test_Developer_Orichi/static/css/main.0212fd7d.css.map",
+    "main.1bce6623.js.map": "/Test_Developer_Orichi/static/js/main.1bce6623.js.map",
+    "488.6d85803d.chunk.js.map": "/Test_Developer_Orichi/static/js/488.6d85803d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0212fd7d.css",
+    "static/js/main.1bce6623.js"
+  ]
+}
