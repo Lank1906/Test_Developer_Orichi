@@ -164,7 +164,7 @@ export default function VolumeDiscountForm() {
                             headings={["Title", "Discount Type", "Quantity", "Amount"]}
                             rows={options.map((opt) => [opt.title, discountTypes.find((type) => type.value === opt.discountType)?.label || "None", opt.quantity, opt.amount ? (opt.discountType === "percentage" ? `${opt.amount}%` : `$${opt.amount}`) : "N/A"])}
                         />
-                        <Button fullWidth onClick={onSubmit} primary>Save</Button>
+                        <Button fullWidth onClick={handleSubmit(onSubmit)} primary>Save</Button>
                     </LegacyCard>
                 </Layout.Section>
             </Layout>
